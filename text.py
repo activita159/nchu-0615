@@ -88,10 +88,11 @@
 
 # 亂數隨機產生10個，介於1~100之間整數值，只拿質數
 import random
-ls = random.choices(range(1, 101), k=10)
+
+ls = random.choices(range(1, 101), k = 10)
 prime_list = []
 for i in ls:
-    for j in range(2, int(i**0.5)+1):
+    for j in range(2, int(i**0.5) + 1):
         if i % j == 0:
             break
     else:
